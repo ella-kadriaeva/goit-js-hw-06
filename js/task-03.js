@@ -12,3 +12,13 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+// Добавь минимальное оформление галереи флексбоксами или гридами через CSS классы.
+const listGallery = document.querySelector(".gallery");
+
+const list = images
+  .map((image) => `<li class="list-item"><img src=${image.url} alt =${image.alt} width="480px"/></li>`)
+  .join("");
+
+listGallery.insertAdjacentHTML("beforeend", list);
+

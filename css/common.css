@@ -18,7 +18,14 @@ input {
   font: inherit;
 }
 
+
 button {
   padding: 8px 12px;
   cursor: pointer;
+}
+
+.gallery {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
 }
