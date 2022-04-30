@@ -19,17 +19,17 @@ refs.buttonDestroy.addEventListener('click', destroyBoxes)
 function createBoxes(amount) {
   amount = getAmount();
   const divs =[];
-  for(let i = 1; i <= amount; i += 1) {
+  for(let i = 0; i < amount; i += 1) {
     divs[i] = document.createElement('div');
-    divs[i].style.width = `${20 + 10 * i}px`;
-    divs[i].style.height = `${20 + 10 * i}px`;
+    divs[i].style.width = `${30 + 10 * i}px`;
+    divs[i].style.height = `${30 + 10 * i}px`;
     divs[i].style.backgroundColor = getRandomHexColor();
     divs.push(divs[i]);
   }
     refs.box.append(...divs);
   }
 function getAmount () {
-  return refs.input.value;
+     return refs.input.value;
   }
 function destroyBoxes () {
   refs.box.innerHTML = ' ';
