@@ -12,5 +12,6 @@ function onFormSubmit(event) {
        password: currentValue.password.value,
      };
     console.log(data);
- 
+    currentValue.email.value = "";
+    currentValue.password.value = "";
 }
